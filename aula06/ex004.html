@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt ("Qual é seu nome?")
+        document.write(` Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. </br>`)
+        /* o comando   document.write   significa escrever em um documento o que está entre parenteses */
+        /* no exemplo acima foi utilizado um template string com o placeholder ${} e o comando length que mostra a quantidade de letras da string que o antecede, nesse caso nome. Nos exemplos abaixo, novos comandos: toUpperCase() e toLowerCase() que mostra em letras maiúsculas e letras minúsculas respectivamente a string que o antecede */
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}. </br> `)
+        document.write(`Seu nome em letras minúsculas é ${nome.toLocaleLowerCase()}.`)
+        /* Percebe-se que é possível utilizar html dentro do código JavaScript como foi exemplo de strong e br (quebra de linha) */
+    </script>
+</body>
+</html>

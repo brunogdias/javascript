@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = 1545.5
+        alert(n1.toFixed(2))/* toFixed permite alterar a quantidade de casas decimais. */
+        alert(n1.toFixed(2).replace('.',',')) /* replace permite alterar os sinais. */
+        alert(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})) /* todo esse comando faz com que o número seja configurado no formato da moeda brasileira. No lugar de BRL pode-se usar outras como USD, EUR e etc. */    
+    </script>
+</body>
+</html>
