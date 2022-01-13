@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Alguns Operadores: 
+        1) Aritméticos +  -  *  /   %  ** 
+        2) Atribuição
+        3) Relacionais
+        4) Lógicos 
+        5) Ternários 
+
+        1) Aritméticos  
+            Exemplos:
+                5 + 2 = 7
+                5 -2 = 3
+                5 * 2 = 10
+                5 / 2 = 2.5
+                5 % 2 = 1 (essa porcentagem mostra o resto de uma divisão)
+                5 ** 2 = 25 (dois asteriscos juntos, trata-se de potenciação)
+                    
+                    Ordem de Precedência dos operadores aritméticos:
+                        1ª)  ()
+                        2ª)  **
+                        3ª)  *  /  %   (os três possuem a mesma precedência) 
+                        4ª)  +  -
+                        
+                        Exemplos com variáveis:
+                            var a = 5 + 3           resultado 8   (lembrando que sinal de = siginifica no código "recebe")
+                            var b = a % 5           resultado 3
+                            var c = 5 * b ** 2      resultado 45
+                            var d = 10 - a / 2      resultado 6
+                            var e = 6 * 2 / d       resultado 2
+                            var f = b % e + 4 / e   resultado 3
+
+       2) Auto-atribuições com operadores matemáticos:
+                        var n = 3                               (lembrando que sinal de = siginifica no código "recebe")
+                        n = n + 4        resultado 7
+                        n = n - 5        resultado 2
+                        n = n * 4        resultado 8
+                        n = n / 2        resultado 4
+                        n = n ** 2       resultado 16
+                        n = n % 5        resultado 1
+                        
+                        Simplificando a auto-atribuição do exemplo acima:
+                        var n = 3
+                        n += 4          resultado 7
+                        n -= 5          resultado 2
+                        n *= 4          resultado 8
+                        n /= 2          resultado 4
+                        n **= 2         resultado 16
+                        n %= 5          resultado 1
+       
+        3) Relacionais
+            São eles: 
+            >   maior que
+            <   menor que  
+            >=  maior ou igual que  
+            <=  menor ou igual que
+            ==  igualdade ( mesmo valor porém não considera o tipo de dado) 
+            === igualdade (mesmo valor e mesmo tipo de dado) 
+            !=  diferente/desigual
+            !== diferente/desigual restrito
+
+            Exemplos:
+            5 > 2      true   *true e false é dado do tipo boolean
+            7 < 4      false
+            8 >= 8     true
+            9 <= 7     false
+            4 != 4     false
+            5 == 5     true
+            5 == '5'   true  (o sinal de igualdade não testa o tipo de dado. '5' é uma String, porém para o sinal de igualdade eles possuem a mesma grandeza)
+            5 === '5'  false (foi comparado o valor e o tipo, sendo este último, diferente por ser uma String)
+            5 === 5    true  (valor e tipo igual)
+            5 !== '5'  true  (valor igual porém tipo diferente)                         
+
+-->
+</body>
+</html>
