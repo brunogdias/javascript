@@ -15,7 +15,7 @@
         4) Lógicos 
         5) Ternários 
 
-        1) Aritméticos  
+        1) Operadores Aritméticos  
             Exemplos:
                 5 + 2 = 7
                 5 -2 = 3
@@ -56,7 +56,7 @@
                         n **= 2         resultado 16
                         n %= 5          resultado 1
        
-        3) Relacionais
+        3) Operadores Relacionais
             São eles: 
             >   maior que
             <   menor que  
@@ -79,7 +79,7 @@
             5 === 5    true  (valor e tipo igual)
             5 !== '5'  true  (valor igual porém tipo diferente)                         
 
-        4) Lógicos
+        4) Operadores Lógicos
             São eles:
             !   negação   (ñ)
             &&  conjunção (e)
@@ -109,15 +109,18 @@
 
             Obs. Caso nas operações lógicas em uma mesma expressão tenha o sinais !, && e ||, deve-se resolver cada um na ordem: !  &&  ||
             
-        5) Ternário
-        São eles:
-        ?   
-        :
-        Estrutura: teste ? true : false
-        Exemplo:
+        5) Operadores Ternários
+        São eles: ? (receberá)     : (do contrário, receberá)
+       
+        Estrutura: teste ? true : false   
+        ou seja se o teste / a condição for atendida/verdadeira receberá true do contrário receberá false.
+        
+        Exemplos:
         var media = 5.5      média >= 7.0 ? "Aprovado" : "Reprovado"   resultado "Reprovado"
-        var x = 8            var res = x % 2 == 0 ? 5 : 9              resultado ""
-
--->
+        var x = 8            var res = x % 2 == 0 ? 5 : 9              resultado 5
+                             leia-se: se 8 % 2 for igual a 0, a variável "res" receberá 5 do contrário receberá 9.   
+        var idade = 19       var exemplo = idade >= 18 ? "Maior de Idade" : "Menor de Idade"        resultado: "Maior de Idade"    
+                             leia-se: se a idade for maior ou igual a 18, a variável "exemplo" receberá "Maior de Idade" do contrário receberá "Menor de Idade". 
+-->                         
 </body>
 </html>
