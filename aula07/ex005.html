@@ -9,7 +9,7 @@
 <body>
     <!-- 
     Alguns Operadores: 
-        1) Aritméticos +  -  *  /   %  ** 
+        1) Aritméticos 
         2) Atribuição
         3) Relacionais
         4) Lógicos 
@@ -98,6 +98,26 @@
             true  || false  resultado true
             false || true   resultado true
             false || false  resultado false
+
+            Outros Exemplos de expressões:
+            var a = 5       var b = 8
+            a > b && b % 2 == 0     resultado false
+            a <= b || b / 2 == 2    resultado true
+            idade >= 15 && idade <= 17 é mesmo que "a idade está entre 15 e 17?"
+            estado == 'RJ' || estado == "SP" é o mesmo que "o estado é RJ ou SP?"
+            salário > 1500 && sexo != 'M' é o mesmo que "o salário é acima de 1500 e não é homem?"
+
+            Obs. Caso nas operações lógicas em uma mesma expressão tenha o sinais !, && e ||, deve-se resolver cada um na ordem: !  &&  ||
+            
+        5) Ternário
+        São eles:
+        ?   
+        :
+        Estrutura: teste ? true : false
+        Exemplo:
+        var media = 5.5      média >= 7.0 ? "Aprovado" : "Reprovado"   resultado "Reprovado"
+        var x = 8            var res = x % 2 == 0 ? 5 : 9              resultado ""
+
 -->
 </body>
 </html>
