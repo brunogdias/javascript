@@ -21,7 +21,7 @@
     
 
 
-        Árvore DOM do conteúdo HTML criado acima:
+        Árvore DOM do conteúdo HTML criado abaixo:
             windows
                 location
                 document
@@ -35,7 +35,10 @@
                                 strong                                
                             div
                             script                            
-                history                
+                history   
+                
+                Obs. Todos os elementos da árvore DOM que precedem um outro elemento se chama "Parent" e o que sucede se chama "Child".
+                Exemplo: head é child de html, porém é parent de meta e tittle.
     -->
     <h1>Iniciando estudos com DOM</h1>   
     <p>Aqui vai o resultado</p>
@@ -68,7 +71,7 @@
     -->    
     <script>
         // Por marca:
-        var p1 = document.getElementsByTagName('p')[0] // o sinal [0] é para indicar a 1ª tag  p
+        var p1 = document.getElementsByTagName('p')[0] // o sinal [0] é para indicar a 1ª tag  p  do código html acima.
         document.write(p1.innerText) // Esse comando solicita para o documento escrever/mostrar o texto/conteúdo da variável p1 criada antes. Como a variável p1 replica o conteúdo da 1ª tag p então o que foi exibido na página web foi "Aqui vai o Resultado"
         p1.style.color = 'blue'
     </script>
