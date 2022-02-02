@@ -78,7 +78,7 @@
     <br>
     <script>
         var p2 = document.getElementsByTagName('p')[1]
-        document.write('Está escrito assim: ' + p2.innerHTML) // innerHTML apresenta além do conteúdo as formatações apliacadas. Nesse caso, a palavra DOM que está em negrito será apresentada em negrito. No caso de innerText não seriam aplicadas as formatações.
+        document.write('Está escrito assim: ' + p2.innerHTML) // innerHTML apresenta além do conteúdo, as formatações aplicadas. Nesse caso, a palavra DOM que está em negrito será apresentada em negrito. No caso de innerText não seriam aplicadas as formatações.
     </script>
      <script>
         // Por Id:
@@ -97,15 +97,13 @@
         h.style.background = 'orange'
      </script>     
      <script>
-        // Por Seletor:  para div usa-se #   e para class usa-se .
-        var s = document.querySelector('div#msg4')
+        // Por Seletor:  para id usa-se #   e para class usa-se .
+        var s = document.querySelector('#msg4')
         s.style.color = 'yellow'
         s.style.background = 'pink'
-        var w = document.querySelector('div.msg5')
+        var w = document.querySelector('.msg5')
         w.style.color = 'black'
-        
-        
-       
+               
      </script>
     
 
