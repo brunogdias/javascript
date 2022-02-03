@@ -5,4 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Eventos DOM</title>
+    <style>
+        
+        body {
+            background-color: black;
+        }
+
+        #area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> <!--ao colocar  onclick="clicar()" e etc na div indicará ao html que ao clicar ou entrar ou sair com a seta do mouse sobre o conteúdo da div na página web, poderá acontecer ações. Ações essas que serão criadas abaixo através do código javascript. -->
+        Interaja...
+    </div>
+
+    <script>
+        function clicar() {
+            var a = document.getElementById('area')
+            a.innerHTML = "Clicou!"  // a função/function clicar nessa linha de código mostra/exibe a palavra "Clicou!" quando o conteúdo da div for clicado na página web.
+            a.style.background = "red" // a função/function clicar nessa linha de código deixa o conteúdo da div vermelho quando o conteúdo da div for clicado na página web.
+        }
+        function entrar () {
+            var b = document.getElementById('area')
+            b.innerText = "Entrou!" // a função/function entrar nessa linha de código mostra/exibe a palavra "Entrou!" quando a seta entrar no conteúdo da div na página web.
+        }
+        function sair () {
+            var c = document.getElementById('area')
+            c.innerHTML = 'Saiu!' // a função/function sair nessa linha de código mostra/exibe a palavra "Saiu!" quando a seta sair do conteúdo da div na página web.
+            c.style.background = 'green' // a função/function sair nessa linha de código deixa o conteúdo da div verde quando a seta sair do conteúdo da div na página web.
+        }
+    </script>
+
+     <!-- 
+        
+    Outra forma de reescrever o código acima (arquivo ex006a.html):  
+    
+
+    <div id="area"> 
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementsById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar() {            
+            a.innerHTML = "Clicou!"  
+            a.style.background = "red" 
+        }
+        function entrar () {
+            a.innerText = "Entrou!"              
+        }
+        function sair () {      
+            a.innerHTML = 'Saiu!' 
+            a.style.background = 'green' 
+        }
+    </script>
+
+
+   -->
+
+</body>
+</html>
