@@ -16,27 +16,29 @@
             font: normal 18pt Arial;
             width: 100px;
         }
-        #res {
+        #result {
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id='txtn1'> +
-    <input type="number" name="txtn2" id="txtn2">
+    <input type="number" name="caixa1" id='caixa1'> +  <!-- pode-se usar também class no lugar de id -->
+    <input type="number" name="caixa2" class="caixa2"> <!-- pode-se usar também id no lugar de class -->
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <p id="result">Resultado</p> 
     <script>
         function somar() {
-            var tn1 = document.getElementById('txtn1') // pode-se usar document.querySelector("#txtn1")
-            var tn2 = document.querySelector("#txtn2") // pode-se usar document.getElementById('txtn2')
-            var r = document.getElementById('res')
-            var n1 = Number (tn1.value) // essa variável é p/ transformar os dados do input em nºs, pois são considerados pelo código como textos (mesmo que se digite números nesse campos na página web).
-            var n2 = Number (tn2.value) // mesma sitação da variável n1
-            var s = n1 + n2
-            r.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.`
+            var cx1 = document.getElementById('caixa1') // pode-se usar document.querySelector("#caixa1")
+            var cx2 = document.querySelector(".caixa2") // pode-se usar document.getElementById('caixa2')
+            var r = document.getElementById('result')
+            var n1 = Number (cx1.value) // essa variável é p/ transformar os dados strings em nºs, pois mesmo que se digite números nos campos (input) na página web, eles são considerados strings.
+            var n2 = Number (cx2.value) // mesma sitação da variável n1
+            var s = n1 + n2            
+            r.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>.` // Lembrando que para o placeholder ${} funcionar, deve-se sempre usar sinal de crase ` no inicio e final . No lugar de r.innerHTML, pode-se usar r.innerText.
         }
+
+        // Obs. No exemplo acima, dentro do código do javascript é preciso usar a tag   var ou const  (com algum nome opcional, no exemplo foi cx1, cx2 e r) para as id's do html (caixa1, caixa2 e result) sejam reconhecidas/puxadas para dentro do código do javascript e a partir daí aplicar ações sobre elas.
     </script>
 </body>
 </html>
