@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Qual o seu país?</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1, p, #res {
+            color: white;
+        }
+        #país{
+            width: 150px;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Qual é o seu país?</h1>
+    <p>Informe de qual país você é: <input  type="text" name="pais" id="pais"> <input type="button" value="Verificar" onclick="calcular()"></p>
+    <p id="res"></p>
+    <script>        
+        function calcular() {
+            var pais1 = document.getElementById('pais').value.toLowerCase() // o termo .value.toLowerCase() traz o texto digitado na caixa (input) na pagweb como uma string. É preciso essa conversão para funcionar.
+            //ao invés de usar a extensão .value.toLoweCase() acima, poderia ter digitado nesse campo a seguinte sequencia para converter para String:  var pais2 = String(pais1.value.toLowerCase()). Nesse caso, em if seria (pais2 == 'brasil')
+            var res1 = document.querySelector('#res')            
+            if (pais1 == 'brasil'){    
+                res1.innerHTML = `Você é brasileiro!`
+        } else{
+            res1.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>

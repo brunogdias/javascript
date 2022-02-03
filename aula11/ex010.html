@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Detran</title>
+    <style>
+       body {
+           background-color: black;
+       }
+       h1, p {
+           color: white;
+       }
+       #vel {
+           width: 40px;
+       }
+       .ver{
+        width: 80px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>Velociodade do carro <input type="number" name="vel" id="vel"> km/h <input class="ver" type="button" value="Verificar" onclick="calcular()"> </p>
+    <p id="res">Resultado:</p>
+    <script>
+        function calcular() {    
+            var vel1 = document.getElementById('vel') // lembrando que pode tb usar documet.querySelector('#vel')
+            var vel2 = Number(vel1.value)
+            var res1 = document.querySelector('#res')
+            res1.innerHTML= `<p>Sua velocidade atual é de <strong>${vel2}</strong> km/h.</p>`
+            if (vel2 > 60) {
+                res1.innerHTML += `<p> Você está <strong>MULTADO</strong> por excesso de velocidade!`
+            }
+            res1.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script> 
+</body>
+</html>
