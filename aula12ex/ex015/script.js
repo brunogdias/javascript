@@ -14,37 +14,27 @@ function verificar() {
         if (fsex[0].checked) { //leia-se: se o 1º botão criado for marcado....
             genero = 'Homem'   //... a variável gênero receberá Homem
             if (idade >=0 && idade < 1) {
-                // bebê h
                 img.setAttribute('src', 'bebe-h.png') // todo esse comando é o mesmo que colocar no html <img src='bebe-h.png'>
             } else if (idade < 12) {
-                // Menino
                 img.setAttribute('src', 'menino.png')
             } else if (idade < 22) {
-                // Rapaz
                 img.setAttribute('src', 'rapaz.png')
             } else if (idade < 60) {
-                // Homem
                 img.setAttribute('src', 'homem.png')
             } else {
-                // Idoso
                 img.setAttribute('src', 'idoso.png')
             }            
         } else if (fsex[1].checked){ // se não, o 2º botão criado for marcado....
             genero = 'Mulher'   //... a variável gênero receberá Mulher
             if (idade >=0 && idade < 1) {
-                // bebê m
                 img.setAttribute('src', 'bebe-m.png')
             } else if (idade < 12) {
-                // Menina
                 img.setAttribute('src', 'menina.png')
             } else if (idade < 22) {
-                // Moça
                 img.setAttribute('src', 'moca.png')
             } else if (idade < 60) {
-                // Mulher
                 img.setAttribute('src', 'mulher.png')
             } else {
-                // Idosa
                 img.setAttribute('src', 'idosa.png')
             }  
         }
