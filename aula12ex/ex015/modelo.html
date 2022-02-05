@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="0"> </p> <!-- min="0" impossibilita de ser colocado nº. negat.-->
+            <p>Sexo: 
+                <input type="radio" name="sexo" id="masc" checked>  <!--checked p/ que comece marcado-->
+                <label for="masc">Masculino</label>  <!--label é um rótulo/etiqueta/nome qeu fica associado pela id ao botão do tipo esfera criado acima -->
+                <input type="radio" name="sexo" id="fem"> <!-- Obs. em name="sexo" em ambos botões estão iguais pois se colocar nomes diferentes o código permitirá que ambos sexos sejam marcados-->
+                <label for="fem">Feminino</label> 
+            </p>
+            <p> <input type="button" value="Verificar" onclick="verificar()"></p> <!--ao colocar  onclick="clicar()" indicará ao javascript que ao clicar sobre este botão na página web, as ações criadas no código javascript que estão ligadas pelo termo "verificar()" serão acionadas. -->
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
