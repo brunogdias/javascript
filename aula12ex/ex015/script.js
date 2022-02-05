@@ -9,37 +9,45 @@ function verificar() {
         var fsex = document.getElementsByName('sexo')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img') // é uma forma de criar uma imagem dinamicamente, ao invés de usar o código html
-        img.setAttribute('id', 'foto') // todo esse comando é o mesmo que colocar no html <img id='foto'>
-        if (fsex[0].checked) { //leia-se: se o 1º botão criado for marcado....
-            genero = 'Homem'   //... a variável gênero receberá Homem
-            if (idade >=0 && idade < 1) {
+        var img = document.createElement('img') // é uma forma de criar uma imagem dinamicamente, ao invés de usar o código html        
+        if (fsex[0].checked) { //leia-se: se o 1º botão criado for marcado....            
+            if (idade <= 1) {
                 img.setAttribute('src', 'bebe-h.png') // todo esse comando é o mesmo que colocar no html <img src='bebe-h.png'>
+                genero = 'um bebê'
             } else if (idade < 12) {
                 img.setAttribute('src', 'menino.png')
+                genero = "um menino"
             } else if (idade < 22) {
                 img.setAttribute('src', 'rapaz.png')
+                genero = "um jovem"
             } else if (idade < 60) {
                 img.setAttribute('src', 'homem.png')
+                genero = "um homem"
             } else {
                 img.setAttribute('src', 'idoso.png')
+                genero = "um idoso"
             }            
-        } else if (fsex[1].checked){ // se não, o 2º botão criado for marcado....
-            genero = 'Mulher'   //... a variável gênero receberá Mulher
-            if (idade >=0 && idade < 1) {
+        } else if (fsex[1].checked){ // se não, o 2º botão criado for marcado....             
+            if (idade <= 1) {
                 img.setAttribute('src', 'bebe-m.png')
+                genero = "um bebê"
             } else if (idade < 12) {
                 img.setAttribute('src', 'menina.png')
+                genero = "uma menina"
             } else if (idade < 22) {
                 img.setAttribute('src', 'moca.png')
+                genero = "uma jovem"
             } else if (idade < 60) {
                 img.setAttribute('src', 'mulher.png')
+                genero = "uma mulher"
             } else {
                 img.setAttribute('src', 'idosa.png')
+                genero = "uma idosa"
             }  
         }
-        res.style.textAlign = 'center' // uma forma de alinhar por código javascript
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.style.textAlign = 'center' // uma forma de alinhar por código javascript        
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos. <br>`
         res.appendChild(img) //esse comando permite que seja mostrada a imagem dinâmica criada acima de acordo com o(s) critério(s) atendido(s)
+        
     }
 }
