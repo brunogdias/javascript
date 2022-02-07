@@ -14,11 +14,11 @@
     </header>
     <section>
         <div>
-            <p> Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="0"> </p> <!-- min="0" impossibilita de ser colocado nº. negat.-->
+            <p> Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="0"> </p> <!-- min="0" impossibilita de ser colocado nº. negat. pela seta do botão criado-->
             <p>Sexo: 
-                <input type="radio" name="sexo" id="masc" checked>  <!--checked p/ que comece marcado-->
-                <label for="masc">Masculino</label>  <!--label é um rótulo/etiqueta/nome qeu fica associado pela id ao botão do tipo esfera criado acima -->
-                <input type="radio" name="sexo" id="fem"> <!-- Obs. em name="sexo" em ambos botões estão iguais pois se colocar nomes diferentes o código permitirá que ambos sexos sejam marcados-->
+                <input type="radio" name="sexo" id="masc" checked>  <!--checked p/ que comece marcado, obrigando a escolher uma das opções -->
+                <label for="masc">Masculino</label>  <!--label é um rótulo/etiqueta/nome que fica associado pela id ao botão do tipo esfera criado acima -->
+                <input type="radio" name="sexo" id="fem"> <!-- Obs. em name="sexo" em ambos botões estão iguais pois se colocar nomes diferentes, o código  do js permitirá que ambas opções (sexo) sejam marcadas-->
                 <label for="fem">Feminino</label> 
             </p>
             <p> <input type="button" value="Verificar" onclick="verificar()"></p> <!--ao colocar  onclick="clicar()" indicará ao javascript que ao clicar sobre este botão na página web, as ações criadas no código javascript que estão ligadas pelo termo "verificar()" serão acionadas. -->
@@ -32,6 +32,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-</html>
-
- // todo esse comando é o mesmo que colocar no html <img id='foto'>
+</html> 
