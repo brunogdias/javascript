@@ -26,5 +26,5 @@ Vejamos:
 var b = 1
 do {
     console.log(`Teste ${b}`)
-} while (b <=6)
-b++
+    b++
+} while (b <=5)
