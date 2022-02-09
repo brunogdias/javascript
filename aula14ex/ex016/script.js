@@ -29,3 +29,8 @@ function contar() {
         res.innerHTML += `\u{1F3C1}`
     }
 }
+
+function limpar() {
+let limpar = document.getElementById('res')
+limpar.innerHTML = 'Preparando a contagem...'
+}
