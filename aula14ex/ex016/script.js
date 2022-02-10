@@ -34,3 +34,9 @@ function limpar() {
 let limpar = document.getElementById('res')
 limpar.innerHTML = 'Preparando a contagem...'
 }
+
+/* Elementos da estrutura for:
+ O primeiro elemento chama-se inicialização
+ O segundo elemento chama-se teste lógico
+ O terceiro elemento chama-se incremento
+ */

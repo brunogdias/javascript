@@ -9,3 +9,9 @@ while (c <= 3) {
 for (var d = 1; d <= 3; d++) {
     console.log(`Teste ${d}`)
 }
+
+/* Elementos da estrutura for:
+ O primeiro elemento chama-se inicialização
+ O segundo elemento chama-se teste lógico
+ O terceiro elemento chama-se incremento
+ */
