@@ -17,9 +17,8 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363)
 }
 
-#flist {
-    width: 200px;
-    color: black;
+#flista {
+    width: 150px;
 }
 
 footer {
