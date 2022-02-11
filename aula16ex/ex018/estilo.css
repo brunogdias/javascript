@@ -18,7 +18,8 @@ section {
 }
 
 #flist {
-    width: 150px;
+    width: 200px;
+    color: black;
 }
 
 footer {
